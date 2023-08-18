@@ -7,7 +7,7 @@
 ### Setup
 
 ```bash
-go mod init github.com/kobiam/devprojects
+go mod init github.com/kobiam/devprojects/book_mgt_system
 ```
 
 ### Download packages

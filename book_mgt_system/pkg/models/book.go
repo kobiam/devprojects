@@ -2,13 +2,13 @@ package models
 
 import(
 	"github.com/jinzhu/gorm"
-	"github.com/kobiam/devprojects/book_mgt_system"
+	"github.com/kobiam/devprojects/book_mgt_system/pkg/config"
 )
 
-var db *gorm.db
+var db *gorm.DB
 
 type Book struct{
-	gorm.models
+	gorm.Models
 	Name string 'gorm:""json:"name"'
 	Author string 'json:"author"'
 	Publication string 'json:"publication"'
