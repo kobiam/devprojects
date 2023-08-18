@@ -2,7 +2,7 @@ package models
 
 import(
 	"github.com/jinzhu/gorm"
-	"github.com/devprojects/book_mgt_system"
+	"github.com/kobiam/devprojects/book_mgt_system"
 )
 
 var db *gorm.db
