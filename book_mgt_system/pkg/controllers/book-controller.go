@@ -6,8 +6,8 @@ import(
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-	"github.com/devprojects/book_mgt_system/pkg/utils"
-	"github.com/devprojects/book_mgt_system/pkg/models"
+	"github.com/kobiam/devprojects/book_mgt_system/pkg/utils"
+	"github.com/kobiam/devprojects/book_mgt_system/pkg/models"
 )
 
 var NewBook models.Book
