@@ -1,4 +1,4 @@
-module github.com/kobiam/devprojects
+module github.com/kobiam/devprojects/book_mgt_system
 
 go 1.21.0
 
