@@ -2,19 +2,21 @@ version: '3'
 services:
   mysql_db_container:
     image: mysql:latest
-    command: --default-authentication-plugin=mysql_native_password
+    command: --default-authentication-plugin=caching_sha2_password
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
     ports:
       - 3306:3306
     volumes:
       - mysql_db_data_container:/var/lib/mysql
   adminer_container:
-    image: adminer:latest
+    # image: adminer:latest
+    image: dockette/adminer:dg
     environment:
       ADMINER_DEFAULT_SERVER: mysql_db_container
     ports:
-      - 8080:8080
+      - 8080:80
 
 volumes:
   mysql_db_data_container:
