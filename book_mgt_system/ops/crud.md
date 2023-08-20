@@ -24,7 +24,7 @@ go run main.go
 
 ## update record
 
-`GET 127.0.0.1:9010/book/1`
+`PUT 127.0.0.1:9010/book/1`
 
 ```json
 {
